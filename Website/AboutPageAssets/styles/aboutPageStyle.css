@@ -53,6 +53,15 @@ hr {
 	background-color: rgba(208,207,207,1.00);
 	height: 1px;
 }
+button{
+	background: #9900ff;
+	border-radius: 6px;
+	padding: 15px 30px;
+	color: #ffffff;
+	display: inline-block;
+	font: normal bold 22px/1 "Open Sans", sans-serif;
+	text-align: center;
+}
 header .profileHeader p {
 	font-family: sans-serif;
 	color: rgba(146,146,146,1.00);
