@@ -15,8 +15,18 @@ body {
 }
 
 body {
-  background: #f06060;
+  background: #b84dff;
   color: #fff;
+}
+
+button{
+    background: #9900ff;
+    border-radius: 6px;
+    padding: 15px 30px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 22px/1 "Open Sans", sans-serif;
+    text-align: center;
 }
 
 .csstransforms .cn-wrapper {
