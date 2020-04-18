@@ -49,18 +49,8 @@ search_button_homepage{
 
 /* To Navigation Style */
 .codrops-top {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	/*background: #f06060;
 	background: rgba(255, 255, 255, 0.1);*/
-=======
-	background: #AF95D3;
-	background: rgba(39, 44, 0 0.1);
->>>>>>> Controller/master
-=======
-	background: #AF95D3;
-	background: rgba(39, 44, 0 0.1);
->>>>>>> Controller/master
 	text-transform: uppercase;
 	width: 100%;
 	font-size: 0.69em;
@@ -76,7 +66,7 @@ search_button_homepage{
 }
 
 .codrops-top a:hover {
-	background: rgba(90,99,0,0);
+	background: rgba(255,255,255,0.95);
 	color: #777;
 }
 
