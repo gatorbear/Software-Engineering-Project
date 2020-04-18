@@ -16,13 +16,16 @@ body {
 
 body {
   background: #b84dff;
+	background: linear-gradient(to top, #8035b2 0%, #b84dff 100%);
   color: #fff;
 }
 
 button{
-    background: #9900ff;
+    background: #6B00B2;
     border-radius: 6px;
+	border: 0;
     padding: 15px 30px;
+	margin: 10px;
     color: #ffffff;
     display: inline-block;
     font: normal bold 22px/1 "Open Sans", sans-serif;
