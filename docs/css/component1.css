@@ -15,8 +15,8 @@ body {
 }
 
 body {
-  background: #b84dff;
-  color: #fff;
+  background: #FFF;
+  color: #000;
 }
 
 button{
@@ -90,7 +90,7 @@ button{
   padding-bottom: 1em;
   height: 3.5em;
   width: 3.5em;
-  background-color: #fff;
+  background-color: #AF95D3;
   position: fixed;
   left: 50%;
   margin-left: -1.75em;
