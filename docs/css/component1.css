@@ -15,9 +15,14 @@ body {
 }
 
 body {
+<<<<<<< HEAD
   background: #b84dff;
 	background: linear-gradient(to top, #8035b2 0%, #b84dff 100%);
   color: #fff;
+=======
+  background: #FFF;
+  color: #000;
+>>>>>>> Controller/master
 }
 
 button{
@@ -93,7 +98,7 @@ button{
   padding-bottom: 1em;
   height: 3.5em;
   width: 3.5em;
-  background-color: #fff;
+  background-color: #AF95D3;
   position: fixed;
   left: 50%;
   margin-left: -1.75em;
