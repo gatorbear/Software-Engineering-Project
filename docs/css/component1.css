@@ -16,9 +16,14 @@ body {
 
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background: #b84dff;
 	background: linear-gradient(to top, #8035b2 0%, #b84dff 100%);
   color: #fff;
+=======
+  background: #FFF;
+  color: #000;
+>>>>>>> Controller/master
 =======
   background: #FFF;
   color: #000;
