@@ -147,19 +147,20 @@ button{
 }
 
 #canvasApi {
-    width: 400px;
+    width: 30%;
     float: right;
     height: 500px;
+	margin-right: 10%;
     background-color: blue;
 }
 #calendar {
-    width: 400px;
+    width: 30%;
     float: left;
     height: 500px;
+	margin-left: 10%;
     background-color: green;
 }
 
 .containerBox {
-    width: 1500px;
-    margin: auto;
+    
 }
