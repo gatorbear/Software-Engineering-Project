@@ -14,6 +14,18 @@ search_button_homepage{
 	
 }
 
+button{
+    background: #6B00B2;
+    border-radius: 6px;
+	border: 0;
+    padding: 15px 30px;
+	margin: 10px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 22px/1 "Open Sans", sans-serif;
+    text-align: center;
+}
+
 .container > header {
 	margin: 0 auto;
 	padding: 2em;
@@ -132,4 +144,22 @@ search_button_homepage{
 		display: none;
 	}
 
+}
+
+#canvasApi {
+    width: 400px;
+    float: right;
+    height: 500px;
+    background-color: blue;
+}
+#calendar {
+    width: 400px;
+    float: left;
+    height: 500px;
+    background-color: green;
+}
+
+.containerBox {
+    width: 1500px;
+    margin: auto;
 }
