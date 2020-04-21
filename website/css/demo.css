@@ -149,14 +149,14 @@ button{
 #canvasApi {
     width: 30%;
     float: right;
-    height: 500px;
+    height: auto;
 	margin-right: 10%;
     background-color: blue;
 }
 #calendar {
     width: 30%;
     float: left;
-    height: 500px;
+    height: auto;
 	margin-left: 10%;
     background-color: green;
 }
