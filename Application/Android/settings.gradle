@@ -1,0 +1,2 @@
+rootProject.name='Fl Poly Quicklinks'
+include ':app'
