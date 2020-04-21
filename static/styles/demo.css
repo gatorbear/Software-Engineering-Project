@@ -11,7 +11,7 @@ a {
 }
 
 search_button_homepage{
-	
+
 }
 
 button{
@@ -151,16 +151,18 @@ button{
     float: right;
     height: auto;
 	margin-right: 10%;
-    background-color: blue;
+	opacity: 1;
+    background-color: transparent;
 }
 #calendar {
     width: 30%;
     float: left;
     height: auto;
 	margin-left: 10%;
-    background-color: green;
+	opacity: 1;
+    background-color: transparent;
 }
 
 .containerBox {
-    
+
 }

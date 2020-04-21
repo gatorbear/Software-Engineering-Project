@@ -2,25 +2,25 @@
 <html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Start page</title>
 		<!--title of page -->
 		<meta name="description" content="here are links for poly students" />
 		<meta name="keywords" content="unnoficial poly start page" />
 		<meta name="author" content="Group 8" />
 		<!--not needed just for search query and the like -->
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/normalize.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/demo.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/component1.css') }}" />
 		<!--import needed css -->
-		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script type = "text/javascript" src="{{ url_for('static', filename = 'styles/modernizr-2.6.2.min.js') }}"></script>
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<!--import needed javascript -->
 	<!--initialize html file-->
 	</head>
 	<!--^^ INITIALY BELOW SCRIPT!!!!-->
-	
+
 <!-- unneeded script?
 
 	<script type="text/javascript">
@@ -34,7 +34,7 @@
 			})();
 	</script>
 -->
-	
+
 	<body>
 		<div class="container">
 			<!-- top search bar -->
@@ -44,7 +44,7 @@
 			</div>
 			<header>
 				<!--text and duck duck go header-->
-				<h1>Florida Polytechnic Homepage<span>Your one stop shop for quick Florida Poly links!</span></h1>	
+				<h1>Florida Polytechnic Homepage<span>Your one stop shop for quick Florida Poly links!</span></h1>
 				<nav class="Search bar">
 					<iframe src="https://duckduckgo.com/search.html?prefill=Search DuckDuckGo&bgcolor=532d8e&focus=yes" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
 				</nav>
@@ -58,12 +58,24 @@
 					<button onclick="location.href = 'https:apps.floridapoly.edu';" id="appBut"  target="_blank">Apps</button>
 			</section>
 				<!--boxes for the calendar and canvas api-->
-			
+
 				<!--need to format for resizing-->
 			<div class="containerBox">
     			<div id="canvasApi">
+						<!--THIS IS ME-->
+						<p>Upcoming Canvas Assignments</p>
+						<table border = 1>
+         			{% for key, value in result.items() %}
+            		<tr>
+               		<th> {{ key }} </th>
+               		<td> {{ value }} </td>
+            		</tr>
+         		{% endfor %}
+      		</table>
 				</div>
     			<div id="calendar"><a> </a>
+						<!--THIS IS ME-->
+							<iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=ajE1MWV1a3RoZmh2bHY1YjNhb2ZvbXYzY2ZyMHE1aGNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23B39DDB&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTz=0&amp;showCalendars=0&amp;mode=AGENDA&amp;showTabs=0&amp;showDate=0" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
     			</div>
     			<div id="clear"></div>
 			</div>
@@ -77,10 +89,10 @@
 				      <li><a href="https://new.dineoncampus.com/FLPoly" target="_blank"><span class="fas fa-pizza-slice"></span></a></li>
 				      <li><a href="https://floridapoly.edu/" target="_blank"><span class="fas fa-home"></span></a></li>
 				      <li><a href="https://floridapoly.bncollege.com/shop/florida-poly/home" target="_blank"><span class="fas fa-book-open"></span></a></li>
-						
+
 				      <!--need to figure out how to redirect to seprate html file-->
-					  <li><a href="credits.html"><span class="fas fa-ellipsis-v" target="_blank"></span></a></li>
-				     
+					  <li><a href="{{ url_for('credits') }}"><span class="fas fa-ellipsis-v" target="_blank"></span></a></li>
+
 					</ul>
 				</div>
 					<div id="cn-overlay" class="cn-overlay"></div>
@@ -88,7 +100,7 @@
 			</div>
 		</div>
 		<!--other nescecary scripts -->
-		<script src="js/polyfills.js"></script>
-		<script src="js/demo1.js"></script>
+		<script type = "text/javascript" src="{{ url_for('static', filename = 'styles/polyfills.js') }}"></script>
+		<script type = "text/javascript" src="{{ url_for('static', filename = 'styles/demo1.js') }}"></script>
 	</body>
 </html>

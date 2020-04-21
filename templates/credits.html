@@ -2,19 +2,19 @@
 <html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Credits</title>
 		<!--title of page -->
 		<meta name="description" content="here are links for poly students" />
 		<meta name="keywords" content="unnoficial poly start page" />
 		<meta name="author" content="Group 8" />
 		<!--not needed just for search query and the like -->
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/normalize.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/demo.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/component1.css') }}" />
 		<!--import needed css -->
-		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script type = "text/javascript" src="{{ url_for('static', filename = 'styles/modernizr-2.6.2.min.js') }}"></script>
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<!--import needed javascript -->
 	<!--initialize html file-->
@@ -28,14 +28,14 @@
 		</div>
 			<header>
 				<!-- header with credits -->
-				<h1>Thanks for checking out our page!<span>We made this as a school project for our software engineering class.</span></h1>	
+				<h1>Thanks for checking out our page!<span>We made this as a school project for our software engineering class.</span></h1>
 			</header>
 			<section>
 				<!-- the credits and links to them -->
 				<p>This site was made by Logan Czyzyk and Connor Coddington, Andrew Crosswait made the powerpoint and Djuan Gayle made the app</p>
 				<p>Logan Czyzyk handled the front end and Connor Coddington handled the server and plugins of the site</p>
-				<button onclick="location.href = 'https://docs.google.com/presentation/d/e/2PACX-1vREqADu6cLLwoGrQ5uFQQmLcs2CVvfaM6M4eGaLPRY1h3qtzOdB-95j1rrRPPV-sNqdJEwyYKy8EVSe/pub?start=false&loop=false&delayms=5000';"  target="_blank">See our powerpoint</button>
-                <button onclick="location.href = 'https://github.com/gatorbear/Software-Engineering-Project';"  target="_blank">See our github</button>
+				<button onclick="location.href = '#';" id="polyCanvasBut"  target="_blank">Button to powerpoint</button>
+				<button onclick="location.href = '#';" id="emailBut"  target="_blank">Button to github/app</button>
 			</section>
 	</div>
 </body>
