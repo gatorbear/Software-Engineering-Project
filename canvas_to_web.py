@@ -1,7 +1,6 @@
 #Written By Connor Coddington
 #Goal of this file is to get information from Canvas to display on startpage
 
-
 from flask import Flask, render_template, request, redirect
 
 # Importing canvas class
@@ -19,6 +18,8 @@ print(time)
 #This is the APIKEY for Connor Coddington. It will be deleted when the course ends because it is hosted on a public repository
 #For real implementation IT at Florida Poly could get a key that can read all users info
 #2607~xmwF872jdubyQweLR2MW56dYcFGKxIGNUnpISSBVfbauXsT8SxIidiTWs4rTMNO3
+
+#To get canvasAPI do "git clone https://github.com/ucfopen/canvasapi.git"
 
 #Florida Poly canvas URL
 API_URL = "https://floridapolytechnic.instructure.com/"
